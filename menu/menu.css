@@ -1,0 +1,280 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+/* LOGO */
+.logo {
+    height:7.2rem;
+    border-radius:50%;
+}
+/* HEADER */
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #69db7c;
+    height:96px;
+    padding:0 48px;
+    position:relative;
+}
+.main-nav-list {
+    list-style:none;
+    display:flex;
+    gap:48px;
+    align-items: flex-start;
+    background-color:#69db7c;
+    padding: 24px 32px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display:inline-block;
+    text-decoration:none;
+    color:#e3fafc;
+    font-weight: 500;
+    transition:all 0.4s;
+    font-size:18px;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #3bc9db;
+    text-decoration:underline;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding:12px 30px;
+    border-radius: 9px;
+    color:#fff;
+    background-color:#1098ad;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #3bc9db;;
+}
+
+/* BANNER 8 */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.eatclean-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.text-center {
+    text-align: center !important;
+}
+.align-self-center {
+    align-self: center !important;
+    color:#000;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.banner .title {
+    font-weight: 300;
+    letter-spacing: .3125rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    background-color: rgba(251, 246, 246, 0.969);
+    padding: 10px;
+    border-radius: 5px;
+}
+.banner .time {
+    font-weight: 700;
+    font-size: 3.75rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(251,246,246,0.969);
+    padding: 10px;
+    border-radius: 5px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* MENU */
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:36px;
+    padding:0 50px 0 16px;
+    margin-top:100px;
+  }
+  .menu-image {
+    position: relative;
+    width: 70%;
+  }
+
+  .menu-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-content {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  .menu-content h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    overflow-y:scroll;
+  }
+
+  ::-webkit-scrollbar {
+    width:10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius:5px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .menu-item h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .menu-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .menu-price {
+    font-size: 18px;
+    color: #000;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .subheading {
+    font-size:30px;
+    font-weight: bold;
+    line-height:30px;
+    padding:20px 0 20px 0;
+    text-align: center;
+  }
+  .menu-image-2 {
+    position: relative;
+    width: 50%;
+  }
+
+  .menu-image-2 img {
+    width: 90%;
+    height: auto;
+  }
+
+/* FOOTER */
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid-footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}

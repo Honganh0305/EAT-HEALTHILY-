@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IMPORTANT FOR RESPONSIVE DESIGN (needed for physical devices)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cta.css">
+    <link rel="stylesheet" href="querries.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <title>Eatclean.vn/cta</title>
+</head>
+
+<style>
+    #mailSuccess {
+        display: none;
+        color: rgb(128, 0, 0);
+        font-size: 2rem; /* Increased font size */
+        font-weight: bold;
+        text-align: center;
+        background-color: #f8d7da;
+        padding: 10px;
+        margin: 20px 0;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <a href="#">
+            <img src="IMAGE/eatcleanlogo.jpg" alt="eatclean logo" class="logo">
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="thucdon.html">Thực đơn</a></li>
+                <li><a class="main-nav-link" href="feeback.html">Feedback</a></li>
+                <li><a class="main-nav-link" href="profit.html">Combo ưu đãi</a></li>
+                <li><a class="main-nav-link nav-cta" href="cta.html">Đặt hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">Đặt hàng ngay</h2>
+
+                        <p class="cta-text">
+                            Món ăn ngon, chất lượng, bổ dưỡng đang chờ bạn. Hãy đặt hàng ngay hôm nay. Bạn có thể huỷ đơn bất cứ lúc nào bạn muốn.
+                        </p>
+
+                        <form action="#" class="cta-form" id="registrationForm">
+
+                            <div>
+                                <label for="fullname">Họ và Tên</label>
+                                <input id="fullname" type="text" placeholder="Nguyễn Thuỷ" required>
+                            </div>
+
+                            <div>
+                                <label for="email">Email address</label>
+                                <input id="email" name="email" type="email" placeholder="me@example.com" required>
+                            </div>
+
+                            <div>
+                                <label for="note">Note</label>
+                                <input id="note" type="text" placeholder="1 cơm bò xào lúc lắc, 1 sữa hạt điều" required>
+                            </div>
+
+                            <button type="submit" id="btn" class="btn btn-form">Đăng ký ngay</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="cta-img-box" role="img" aria-label="woman eating"></div>
+                </div>
+
+                <!-- Correctly formatted mail success div -->
+                <div id="mailSuccess" class="mail-success" style="display: none; color: rgb(128, 0, 0);">Đã gửi mail thành công!</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
